@@ -1,5 +1,8 @@
 package com.example.TestDuProjetAvecSpring;
 
+import com.example.TestDuProjetAvecSpring.Acteur;
+import com.example.TestDuProjetAvecSpring.Message;
+
 import java.util.HashMap;
 import java.util.Map;
 
