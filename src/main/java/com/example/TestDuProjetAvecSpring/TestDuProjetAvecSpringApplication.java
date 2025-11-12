@@ -6,6 +6,7 @@ import com.example.TestDuProjetAvecSpring.MicroServiceHopital.PersonnelMedical;
 import com.example.TestDuProjetAvecSpring.MicroServiceHotline.Hotline;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.example.TestDuProjetAvecSpring.Superviseur.ActorSystem;
 
 @SpringBootApplication
 public class TestDuProjetAvecSpringApplication {
