@@ -1,4 +1,4 @@
-package com.example.TestDuProjetAvecSpring;
+package com.example.TestDuProjetAvecSpring.Superviseur;
 
 import com.example.TestDuProjetAvecSpring.Acteur;
 import com.example.TestDuProjetAvecSpring.Message;
