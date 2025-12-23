@@ -10,6 +10,6 @@ public class AmbulancierActor extends Actor {
 
     @Override
     public void onReceive(ActorMessage message) {
-        System.out.println("🚐 Ambulancier en route : " + message.getPayload());
+        System.out.println("Ambulancier en route : " + message.getPayload());
     }
 }

@@ -14,10 +14,10 @@ public class HotlineActor extends Actor {
 
     @Override
     public void onReceive(ActorMessage message) {
-        System.out.println("📞 Hotline reçoit appel de " + message.getSenderId() + ": " + message.getPayload());
+        System.out.println("Hotline reçoit appel de " + message.getSenderId() + ": " + message.getPayload());
         
         if (message.getPayload().toString().contains("coeur")) {
-            System.out.println("⚡️ URGENCE DÉTECTÉE -> Transfert Hôpital");
+            System.out.println("URGENCE DÉTECTÉE -> Transfert Hôpital");
             
             ActorMessage forward = new ActorMessage(getId(), "medecin-urgences", "service-hopital", "Urgence cardiaque pour " + message.getSenderId());
             system.send(forward);

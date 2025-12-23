@@ -14,7 +14,7 @@ public class MedecinActor extends Actor {
 
     @Override
     public void onReceive(ActorMessage message) throws Exception {
-        System.out.println("👨‍⚕️ Médecin reçoit le cas : " + message.getPayload());
+        System.out.println("Médecin reçoit le cas : " + message.getPayload());
         
         // Simulation de panne aléatoire pour tester la supervision
         if (Math.random() > 0.8) {
@@ -22,7 +22,7 @@ public class MedecinActor extends Actor {
         }
 
         // Envoi local à l'ambulancier
-        System.out.println("🚑 Médecin déclenche l'ambulance (local)");
+        System.out.println("Médecin déclenche l'ambulance (local)");
         ActorMessage ordre = new ActorMessage(getId(), "ambulancier-1", null, "Go chercher " + message.getPayload());
         system.send(ordre);
     }

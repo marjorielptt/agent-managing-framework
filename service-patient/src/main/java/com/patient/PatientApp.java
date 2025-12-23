@@ -20,7 +20,7 @@ public class PatientApp {
             PatientActor bob = new PatientActor("patient-bob", system);
             system.registerActor(bob);
 
-            System.out.println("⏳ Patient Bob attend un peu avant d'avoir un malaise...");
+            System.out.println("Patient Bob attend un peu avant d'avoir un malaise...");
             Thread.sleep(5000); // Attendre que tout le monde soit up
             
             bob.avoirMalaise();
