@@ -17,8 +17,34 @@ public class HopitalApp {
     @Bean
     public CommandLineRunner init(ActorSystem system) {
         return args -> {
-            system.registerActor(new MedecinActor("medecin-urgences", system));
-            system.registerActor(new AmbulancierActor("ambulancier-1"));
+            Thread.sleep(500);
+
+            System.out.println("\n⏳ INITIALISATION DU SERVICE HOSPITALIER EN COURS...");
+
+            // Créer un superviseur pour les acteurs de l'hôpital
+            Supervisor hopitalSupervisor = new DefaultSupervisor("superviseur-hopital");
+            system.registerActor(hopitalSupervisor);
+            Thread.sleep(200);
+
+            // Créer les acteurs et les assigner au superviseur
+            MedecinActor medecin = new MedecinActor("medecin-urgences", system);
+            medecin.setSupervisor(hopitalSupervisor);
+            system.registerActor(medecin);
+            Thread.sleep(200);
+
+            AmbulancierActor ambulancier = new AmbulancierActor("ambulancier-1", system);
+            ambulancier.setSupervisor(hopitalSupervisor);
+            system.registerActor(ambulancier);
+
+            // Envoyer un message de test à l'ambulancier pour démontrer
+            ActorMessage testMessage = new ActorMessage("system", "ambulancier-1", null, "Urgence à l'hôpital central");
+            system.send(testMessage);
+
+            // Simuler un crash après un délai
+            Thread.sleep(1000);
+            ActorMessage crashMessage = new ActorMessage("system", "ambulancier-1", null, "CRASH");
+            system.send(crashMessage);
+
         };
     }
 }
