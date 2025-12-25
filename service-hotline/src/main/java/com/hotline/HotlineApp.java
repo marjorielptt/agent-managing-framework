@@ -17,6 +17,7 @@ public class HotlineApp {
     @Bean
     public CommandLineRunner init(ActorSystem system) {
         return args -> {
+            System.out.println("\n⏳ INITIALISATION DE LA HOTLINE EN COURS...");
             system.registerActor(new HotlineActor("hotline-1", system));
         };
     }
