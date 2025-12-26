@@ -19,7 +19,7 @@ public class HopitalApp {
         return args -> {
             Thread.sleep(500);
 
-            System.out.println("\n⏳ INITIALISATION DU SERVICE HOSPITALIER EN COURS...");
+            System.out.println("\nINITIALISATION DU SERVICE HOSPITALIER EN COURS...");
 
             // Créer un superviseur pour les acteurs de l'hôpital
             Supervisor hopitalSupervisor = new DefaultSupervisor("superviseur-hopital");
