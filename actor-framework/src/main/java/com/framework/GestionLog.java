@@ -25,12 +25,8 @@ public class GestionLog {
              PrintWriter printWriter = new PrintWriter(fileWriter)) {
             // Ecriture dans le fichier
             printWriter.println(ligne);
-
-            // Optionnel : On peut aussi l'afficher dans la console pour débugger
-            // System.out.println("📝 Log sauvegardé : " + ligne);
-
         } catch (IOException e) {
-            System.err.println("❌ Erreur lors de l'écriture du log : " + e.getMessage());
+            System.err.println("Erreur lors de l'écriture du log : " + e.getMessage());
         }
     }
 
