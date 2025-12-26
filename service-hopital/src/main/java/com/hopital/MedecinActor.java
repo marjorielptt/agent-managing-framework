@@ -17,7 +17,7 @@ public class MedecinActor extends Actor {
     public void onReceive(ActorMessage message) throws Exception {
         afficherSeparateurDossier();
         String dossier = message.getPayload().toString();
-        System.out.println("• 👨‍⚕️ Médecin lit le dossier : " + dossier);
+        System.out.println("• Médecin lit le dossier : " + dossier);
         GestionLog.ecrire("MEDECIN", "Réception et lecture du dossier : " + dossier);
 
         // Analyse du cas transmis par la Hotline
