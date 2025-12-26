@@ -26,7 +26,7 @@ public class ActorSystem {
 
     public void registerActor(Actor actor) {
         localActors.put(actor.getId(), actor);
-        System.out.println("• ✅ Acteur enregistré : " + actor.getId());
+        System.out.println("• Acteur enregistré : " + actor.getId());
     }
 
     public void send(ActorMessage message) {
@@ -62,8 +62,8 @@ public class ActorSystem {
                 .retrieve()
                 .toBodilessEntity()
                 .subscribe(
-                        success -> System.out.println("• 📤 Message envoyé à " + message.getTargetService()),
-                        error -> System.err.println("• ❌ Erreur envoi vers " + message.getTargetService() + ": " + error.getMessage())
+                        success -> System.out.println("• Message envoyé à " + message.getTargetService()),
+                        error -> System.err.println("• Erreur envoi vers " + message.getTargetService() + ": " + error.getMessage())
                 );
     }
 
@@ -79,7 +79,7 @@ public class ActorSystem {
                 actor.preRestart(e);
                 // On pourrait ré-essayer le message ici
             } else {
-                System.err.println("• 💀 Acteur " + actor.getId() + " arrêté définitivement après trop d'échecs.");
+                System.err.println("• Acteur " + actor.getId() + " arrêté définitivement après trop d'échecs.");
                 localActors.remove(actor.getId());
             }
         }
