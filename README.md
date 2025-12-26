@@ -30,6 +30,6 @@ Dans le terminal du patient, saisir dans la console le numéro de la maladie don
 
 ![Console display](images/menuPatient.png)
 
-**Dernière version :** Décembre 2025
-
 **Auteurs :** Gabriel Legros, Marjorie Lapointe, Arthur Neuez
+**Langage :** Java
+**Dernière version :** Décembre 2025
