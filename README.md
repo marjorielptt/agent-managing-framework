@@ -34,6 +34,5 @@ Dans le terminal du patient, saisir dans la console le numéro de la maladie don
 - Gabriel Legros
 - Marjorie Lapointe
 - Arthur Neuez
-
-### Dernière version
+  
 Décembre 2025
