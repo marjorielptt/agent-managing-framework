@@ -29,3 +29,11 @@ Vous trouverez le fichier jar à installer dans `actor-framework/target/actor-fr
 Dans le terminal du patient, saisir dans la console le numéro de la maladie dont souffre le patient, puis patientez. Vous allez être pris en charge ! 🚑
 
 ![Console display](images/menuPatient.png)
+
+### Auteurs
+- Gabriel Legros
+- Marjorie Lapointe
+- Arthur Neuez
+
+### Dernière version
+Décembre 2025
