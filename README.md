@@ -10,9 +10,9 @@ Ce projet contient également un exemple d'application du framework : le SAMU.
 
 Ce projet est inspiré du framework [Akka](https://github.com/akka/akka-core).
 
-## Tutoriel d'utilisation du framework
+## Installation du framework
 
-Vous trouverez le fichier jar à installer dans `actor-framework/target/actor-framework-1.0.0.jar`
+Vous trouverez le fichier .jar dans `actor-framework/target/actor-framework-1.0.0.jar`
 
 ## Tutoriel d'utilisation de l'exemple du SAMU
 
@@ -27,7 +27,7 @@ Vous trouverez le fichier jar à installer dans `actor-framework/target/actor-fr
 
 ### Prise en main
 
-Dans le terminal du patient, saisir dans la console le numéro de la maladie dont souffre le patient, puis patientez. Vous allez être pris en charge ! 🚑
+Dans le terminal du patient, saisir dans la console le numéro de la maladie dont souffre le patient, puis patienter. Vous allez être pris en charge ! 🚑
 
 ![Console display](images/menuPatient.png)
 
