@@ -1,6 +1,6 @@
 # Framework multi-agents
 
-Framework d’acteurs distribués, où chaque **acteur** représente une entité capable de **recevoir et traiter des messages**. Les acteurs peuvent également communiquer entre eux, qu'ils soient situés dans le même **microservice** ou non.
+Framework d’acteurs distribués, où chaque **acteur** représente une entité capable de **recevoir et traiter des messages**. Les acteurs peuvent également **communiquer** entre eux, qu'ils soient situés dans le même **microservice** ou non.
 
 Notre framework a les propriétés suivantes :
 - **Résilience** : Il gère les pannes d'acteurs sans avoir à redémarrer l'application,
