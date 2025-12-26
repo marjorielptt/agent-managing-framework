@@ -24,7 +24,7 @@ public class PatientApp {
 
             clearConsole();
 
-            System.out.println("\n⏳ Synchronisation initiale du réseau en cours...");
+            System.out.println("\nSynchronisation initiale du réseau en cours...");
 
             // Barre de chargement
             System.out.print("Progression : [");
@@ -89,7 +89,7 @@ public class PatientApp {
                         bob.declarerProbleme("JAMBE");
                         break;
                     default:
-                        System.out.println("❌ Choix invalide, "+bob.getId()+" ne fait rien.");
+                        System.out.println("Choix invalide, "+bob.getId()+" ne fait rien.");
                 }
                 if (!continuer) {
                     break;
@@ -109,7 +109,7 @@ public class PatientApp {
                         continuer = false;
                         reponseValide = true;
                     } else {
-                        System.out.println("❌ Réponse non reconnue. Tapez juste 'o' ou 'n'.");
+                        System.out.println("Réponse non reconnue. Tapez juste 'o' ou 'n'.");
                     }
                 }
             }
