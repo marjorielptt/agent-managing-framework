@@ -1,0 +1,55 @@
+
+
+---------------------------------------------------------------
+
+[26/12/2025 11:55:31] [PATIENT] : Alerte envoyée (COEUR) : J'ai une douleur thoracique intense et mal au bras gauche !
+[26/12/2025 11:55:31] [HOTLINE] : Appel reçu de patient-bob contenant : "j'ai une douleur thoracique intense et mal au bras gauche !"
+[26/12/2025 11:55:31] [HOTLINE] : Analyse : CODE ROUGE (Infarctus) -> Transfert immédiat au Médecin
+[26/12/2025 11:55:31] [MEDECIN] : Réception et lecture du dossier : INFARCTUS suspecté pour patient-bob
+[26/12/2025 11:55:31] [MEDECIN] : Décision : URGENCE VITALE -> Envoi équipe SMUR
+[26/12/2025 11:55:31] [AMBULANCE] : Départ en intervention suite ordre : SMUR - Départ Immédiat - INFARCTUS suspecté pour patient-bob
+[26/12/2025 11:55:36] [PATIENT] : Réponse reçue de ambulancier-1 : 🚑 Tenez bon, j'arrive !
+
+[26/12/2025 11:55:41] [PATIENT] : Alerte envoyée (EPILEPSIE) : Je sens une crise d'épilepsie arriver, je suis seul.
+[26/12/2025 11:55:41] [HOTLINE] : Appel reçu de patient-bob contenant : "je sens une crise d'épilepsie arriver, je suis seul."
+[26/12/2025 11:55:41] [HOTLINE] : Analyse : CODE ORANGE (Neuro) -> Transfert au Médecin
+[26/12/2025 11:55:41] [MEDECIN] : Réception et lecture du dossier : NEURO : Crise épilepsie pour patient-bob
+[26/12/2025 11:55:41] [MEDECIN] : Décision : Transport médicalisé requis -> Envoi Ambulance (VSAV)
+[26/12/2025 11:55:41] [AMBULANCE] : Départ en intervention suite ordre : VSAV - Transport calme - NEURO : Crise épilepsie pour patient-bob
+[26/12/2025 11:55:46] [PATIENT] : Réponse reçue de ambulancier-1 : 🚑 Tenez bon, j'arrive !
+
+[26/12/2025 11:55:52] [PATIENT] : Alerte envoyée (JAMBE) : Je suis tombé, je crois que ma jambe est cassée.
+[26/12/2025 11:55:52] [HOTLINE] : Appel reçu de patient-bob contenant : "je suis tombé, je crois que ma jambe est cassée."
+[26/12/2025 11:55:52] [HOTLINE] : Analyse : CODE VERT (Bobologie) -> Conseil direct au patient (Pas de médecin)
+[26/12/2025 11:55:59] [PATIENT] : Réponse reçue de hotline-1 : Ne bougez pas, mettez de la glace, on vous envoie un taxi conventionné.
+
+
+
+---------------------------------------------------------------
+
+[26/12/2025 12:02:16] [PATIENT] : Alerte envoyée (JAMBE) : Je suis tombé, je crois que ma jambe est cassée.
+[26/12/2025 12:02:17] [HOTLINE] : Appel reçu de patient-bob contenant : "je suis tombé, je crois que ma jambe est cassée."
+[26/12/2025 12:02:17] [HOTLINE] : Analyse : CODE VERT (Bobologie) -> Conseil direct au patient (Pas de médecin)
+[26/12/2025 12:02:24] [PATIENT] : Réponse reçue de hotline-1 : Ne bougez pas, mettez de la glace, on vous envoie un taxi conventionné.
+
+[26/12/2025 12:02:28] [PATIENT] : Alerte envoyée (JAMBE) : Je suis tombé, je crois que ma jambe est cassée.
+[26/12/2025 12:02:28] [HOTLINE] : Appel reçu de patient-bob contenant : "je suis tombé, je crois que ma jambe est cassée."
+[26/12/2025 12:02:28] [HOTLINE] : Analyse : CODE VERT (Bobologie) -> Conseil direct au patient (Pas de médecin)
+[26/12/2025 12:02:35] [PATIENT] : Réponse reçue de hotline-1 : Ne bougez pas, mettez de la glace, on vous envoie un taxi conventionné.
+
+[26/12/2025 12:02:42] [PATIENT] : Alerte envoyée (EPILEPSIE) : Je sens une crise d'épilepsie arriver, je suis seul.
+[26/12/2025 12:02:42] [HOTLINE] : Appel reçu de patient-bob contenant : "je sens une crise d'épilepsie arriver, je suis seul."
+[26/12/2025 12:02:42] [HOTLINE] : Analyse : CODE ORANGE (Neuro) -> Transfert au Médecin
+[26/12/2025 12:02:42] [MEDECIN] : Réception et lecture du dossier : NEURO : Crise épilepsie pour patient-bob
+[26/12/2025 12:02:42] [MEDECIN] : Décision : Transport médicalisé requis -> Envoi Ambulance (VSAV)
+[26/12/2025 12:02:42] [AMBULANCE] : Départ en intervention suite ordre : VSAV - Transport calme - NEURO : Crise épilepsie pour patient-bob
+[26/12/2025 12:02:47] [PATIENT] : Réponse reçue de ambulancier-1 : 🚑 Tenez bon, j'arrive !
+
+[26/12/2025 12:02:54] [PATIENT] : Alerte envoyée (COEUR) : J'ai une douleur thoracique intense et mal au bras gauche !
+[26/12/2025 12:02:54] [HOTLINE] : Appel reçu de patient-bob contenant : "j'ai une douleur thoracique intense et mal au bras gauche !"
+[26/12/2025 12:02:54] [HOTLINE] : Analyse : CODE ROUGE (Infarctus) -> Transfert immédiat au Médecin
+[26/12/2025 12:02:54] [MEDECIN] : Réception et lecture du dossier : INFARCTUS suspecté pour patient-bob
+[26/12/2025 12:02:54] [MEDECIN] : Décision : URGENCE VITALE -> Envoi équipe SMUR
+[26/12/2025 12:02:54] [AMBULANCE] : Départ en intervention suite ordre : SMUR - Départ Immédiat - INFARCTUS suspecté pour patient-bob
+[26/12/2025 12:02:59] [PATIENT] : Réponse reçue de ambulancier-1 : 🚑 Tenez bon, j'arrive !
+
