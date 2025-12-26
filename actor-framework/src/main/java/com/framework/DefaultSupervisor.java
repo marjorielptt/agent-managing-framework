@@ -18,6 +18,6 @@ public class DefaultSupervisor extends Supervisor {
     @Override
     protected void handleMessage(ActorMessage message) throws Exception {
         // Implémentation par défaut : ignorer les messages
-        System.out.println("• 📩 Superviseur " + getId() + " reçoit un message : " + message.getPayload());
+        System.out.println("• Superviseur " + getId() + " reçoit un message : " + message.getPayload());
     }
 }
