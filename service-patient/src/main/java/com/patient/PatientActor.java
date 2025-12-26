@@ -41,7 +41,7 @@ public class PatientActor extends Actor {
                 message = "Je ne me sens pas bien.";
         }
 
-        System.out.println("• 🚨 Patient " + getId() + " signale : " + typeProbleme);
+        System.out.println("• Patient " + getId() + " signale : " + typeProbleme);
         GestionLog.ecrire("PATIENT", "Alerte envoyée (" + typeProbleme + ") : " + message);
 
         ActorMessage msg = new ActorMessage(getId(), "hotline-1", "service-hotline", message);
