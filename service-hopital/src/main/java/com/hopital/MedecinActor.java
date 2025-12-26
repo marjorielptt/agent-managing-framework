@@ -22,19 +22,19 @@ public class MedecinActor extends Actor {
 
         // Analyse du cas transmis par la Hotline
         if (dossier.startsWith("INFARCTUS")) {
-            System.out.println("• \u001B[31m Médecin : C'est un arrêt cardiaque potentiel ! J'envoie le SMUR.\u001B[0m");
+            System.out.println("•\u001B[31m Médecin : C'est un arrêt cardiaque potentiel ! J'envoie le SMUR.\u001B[0m");
             GestionLog.ecrire("MEDECIN", "Décision : URGENCE VITALE -> Envoi équipe SMUR");
             ActorMessage ordre = new ActorMessage(getId(), "ambulancier-1", null, "SMUR - Départ Immédiat - " + dossier);
             system.send(ordre);
 
         } else if (dossier.startsWith("NEURO")) {
-            System.out.println("• \u001B[33m Médecin : Risque de chute. J'envoie une ambulance standard.\u001B[0m");
+            System.out.println("•\u001B[33m Médecin : Risque de chute. J'envoie une ambulance standard.\u001B[0m");
             GestionLog.ecrire("MEDECIN", "Décision : Transport médicalisé requis -> Envoi Ambulance (VSAV)");
             ActorMessage ordre = new ActorMessage(getId(), "ambulancier-1", null, "VSAV - Transport calme - " + dossier);
             system.send(ordre);
 
         } else { // Cas par défaut
-            System.out.println("• \u001B[32m Médecin : Pas d'action requise pour l'instant.\u001B[0m");
+            System.out.println("•\u001B[32m Médecin : Pas d'action requise pour l'instant.\u001B[0m");
             GestionLog.ecrire("MEDECIN", "Décision : Pas d'intervention mobile nécessaire.");
         }
     }
