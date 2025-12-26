@@ -36,9 +36,9 @@ public class HopitalApp {
             ambulancier.setSupervisor(hopitalSupervisor);
             system.registerActor(ambulancier);
 
-            // Envoyer un message de test à l'ambulancier pour démontrer
-            ActorMessage testMessage = new ActorMessage("system", "ambulancier-1", null, "Urgence à l'hôpital central");
-            system.send(testMessage);
+            // Envoyer un message de DEBUG à l'ambulancier
+            // ActorMessage testMessage = new ActorMessage("system", "ambulancier-1", null, "Urgence à l'hôpital central");
+            // system.send(testMessage);
 
             // Simuler un crash après un délai
             Thread.sleep(1000);
