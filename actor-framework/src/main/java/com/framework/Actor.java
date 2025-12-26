@@ -26,7 +26,7 @@ public abstract class Actor {
 
     // Gestion de la tolérance aux pannes
     public void preRestart(Throwable reason) {
-        System.out.println("• ⚠️ [SUPERVISION] Redémarrage de l'acteur " + id + " suite à : " + reason.getMessage());
+        System.out.println("• [SUPERVISION] Redémarrage de l'acteur " + id + " suite à : " + reason.getMessage());
     }
 
     public void incrementFailureCount() { this.failureCount++; }
